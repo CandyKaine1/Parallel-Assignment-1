@@ -16,12 +16,12 @@ bool isPrime(int n) {
 
 
 void compute(int start, int end, int threadId, std::vector<int>& result, int& partialSum) {
-    for (int i = start; i <= end; ++i) {
-        if (isPrime(i)) {
-            result.push_back(i);
-            partialSum +=i;
-        }
+  for (int i = start; i <= end; ++i) {
+    if (isPrime(i)) {
+      result.push_back(i);
+      partialSum +=i;
     }
+  }
 }
 
 int main() {
