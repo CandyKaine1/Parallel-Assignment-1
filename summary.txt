@@ -1,5 +1,1 @@
-
-
-Provide a brief summary of your
-approach and an informal statement reasoning about the correctness and efficiency of
-your design. Provide a summary of the experimental evaluation of your approach.
+My process going into this was to split the range into 8 parts, and split those evenly among each thread. Each thread will go through that range and check for any prime numbers, while adding the totals of each of the primes in the process for the solution. The efficiency feels pretty slow as it goes through a lot of numbers, and in order to check primes I call a recursive function in order to go through every possible number. In general though the process does work quickly, especially compared to if I did it without threads although it took a while.
