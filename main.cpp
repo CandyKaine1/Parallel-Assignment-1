@@ -8,7 +8,7 @@
 #include <cmath>
 
 bool isPrime(int n) {
-  if (n<=1 || n%2==0) return false;
+  if (n<=1 || (n%2==0 && n!=2)) return false;
 
   const int s=sqrt(n);
   for (int i=3;i<=s;i++){
